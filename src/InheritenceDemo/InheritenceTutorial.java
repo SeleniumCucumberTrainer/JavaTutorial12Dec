@@ -1,9 +1,11 @@
 package InheritenceDemo;
 
+import EncapsulationAndAbstractionDemo.Mobile;
+
 public class InheritenceTutorial {
 
 	public static void main(String[] args) {
-
+		
 
 		/*Child abc = new Child();
 		
@@ -17,11 +19,11 @@ public class InheritenceTutorial {
 		
 	    Parent abc = new Child();
 		
-		System.out.println(abc.a);
+		//System.out.println(abc.a);
 		
 		abc.sing();
 		
-		abc.sum();
+		//abc.sum();
 		
 		
 		
@@ -35,7 +37,7 @@ class Parent{
 	
 	public Parent(){
 	
-		System.out.println("Hi Parent Cunstructor");
+		//System.out.println("Hi Parent Cunstructor");
 		
 	}
 	
@@ -57,11 +59,12 @@ class Child extends Parent{
 	
 	public Child(){
 		
-		System.out.println("Hi Child Cunstructor");
+		//System.out.println("Hi Child Cunstructor");
 		
 	}
 	
 	public void sing(){
+		super.sing();
 		System.out.println("Hi Child");
 	}
 	
