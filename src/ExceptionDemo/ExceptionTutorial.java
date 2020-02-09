@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class ExceptionTutorial {
 	
 	static int c;
+	static int d ;
+	
+	static int e;
 
 	public static void main(String[] args) {
 
@@ -27,13 +30,26 @@ public class ExceptionTutorial {
 		
 		try{
 			
-		  c =a/b;
+			try{
+		      c =a/b;
+			}catch(Throwable x){
+				System.out.println("Issue in first devide");
+			}
+		  
+		  d= a/b;  
 		
 		}
-		
 		catch(Throwable t){
 			
 			System.out.println(" Pleae enter correct b value");
+			
+			try{
+			e=a/b;
+			}catch(Throwable e){
+				System.out.println("Issue in third devide");
+			}
+			
+			
 			
 			
 		}
